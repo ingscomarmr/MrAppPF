@@ -1,0 +1,91 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:dist="http://schemas.android.com/apk/distribution"
+4    package="com.omr.mrphonefinder"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+8-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:6:5-43
+9        android:minSdkVersion="28"
+9-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:6:15-40
+10        android:targetSdkVersion="29" />
+10-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:6:5-43
+11    <!-- to broadcastreceiver sms -->
+12    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+12-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:8:5-70
+12-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:8:22-67
+13    <uses-permission android:name="android.permission.READ_SMS" />
+13-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:9:5-67
+13-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:9:22-64
+14    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+14-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:10:5-81
+14-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:10:22-78
+15
+16    <application
+16-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:12:5-44:19
+17        android:allowBackup="true"
+17-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:13:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.0.1] C:\Users\x-omr\.gradle\caches\transforms-2\files-2.1\46da25c3e2ae6308b2227b660caa604d\core-1.0.1\AndroidManifest.xml:22:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/ic_launcher"
+20-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:14:9-43
+21        android:label="@string/app_name"
+21-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:15:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:16:9-54
+23        android:supportsRtl="true"
+23-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:17:9-35
+24        android:testOnly="true"
+25        android:theme="@style/AppTheme" >
+25-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:18:9-40
+26        <activity android:name="com.omr.mrphonefinder.MainActivity" >
+26-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:20:9-25:20
+26-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:20:19-47
+27            <intent-filter>
+27-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:21:13-24:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:22:17-69
+28-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:22:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:23:17-77
+30-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:23:27-74
+31            </intent-filter>
+32        </activity>
+33
+34        <!-- delcared to BroadcastReceiver -->
+35        <receiver
+35-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:28:9-37:20
+36            android:name="com.omr.mrphonefinder.MySmsReceiver"
+36-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:29:13-42
+37            android:enabled="true"
+37-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:30:13-35
+38            android:exported="true"
+38-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:32:13-36
+39            android:permission="android.permission.RECEIVE_SMS" >
+39-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:31:13-64
+40            <intent-filter android:priority="2147483647" >
+40-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:33:13-36:29
+40-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:33:28-57
+41                <category android:name="android.intent.category.DEFAULT" />
+41-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:34:17-76
+41-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:34:27-73
+42
+43                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+43-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:35:17-82
+43-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:35:25-79
+44            </intent-filter>
+45        </receiver>
+46
+47        <!-- delcared to JobScheduler -->
+48        <service
+48-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:40:9-42:72
+49            android:name="com.omr.mrphonefinder.CheckStatusService"
+49-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:41:13-47
+50            android:permission="android.permission.BIND_JOB_SERVICE" />
+50-->C:\Users\x-omr\AndroidStudioProjects\MrPhoneFinder\app\src\main\AndroidManifest.xml:42:13-69
+51    </application>
+52
+53</manifest>
